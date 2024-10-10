@@ -16,10 +16,10 @@ class _HomeState extends State<Home> {
   // Create an instance of the database helper
   DatabaseHelper noteDatabase = DatabaseHelper.instance;
   List<NoteModel> notes = [];
+  List<NoteModel> filteredNotes = []; // Maintain a list for filtered notes
 
   TextEditingController searchController = TextEditingController();
   bool isSearchTextNotEmpty = false;
-  List<NoteModel> filteredNotes = []; // Maintain a list for filtered notes
 
   @override
   void initState() {
